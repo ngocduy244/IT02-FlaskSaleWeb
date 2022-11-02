@@ -1,0 +1,15 @@
+{% extends 'layout/base.html'%}
+{%block container%}
+
+<h1 class="text-primary text-center">Chi tiet san pham</h1>
+    <div class="row">
+        <div class="col-md-4 col-sm-4">
+            <img src="{{product.image}}" alt="{{product.name}}" style="width: 100%">
+        </div>
+        <div class="col-md-8 col-sm-4">
+            <h1 class="text-primary">{{product.name}}</h1>
+            <p>{{product.name}}</p>
+            <h3>{{ "{:,.1f}".format(product.price)}} VND</h3>
+        </div>
+    </div>
+{%endblock%}
